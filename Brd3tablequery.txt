@@ -1,0 +1,24 @@
+create table costumermaster6
+(
+CustomerID number(10),
+CustomerCode varchar(30) ,
+costumerName varchar(30),
+CustomerAddress1 varchar(100),
+CostomerAddress2 varchar(100),
+CustomerPinCode number(6),
+Emailaddress varchar(100),
+ContactNumber number(20),
+PrimaryContactPerson varchar(100),
+RecordStatus varchar(1),
+ActiveInactivFlag varchar(1),
+CreateDate date,
+CreatedBy varchar(30),
+ModifiedDate date,
+ModifiedBy varchar(30),
+AuthorizedDate date,
+AuthorizedBy varchar(30)
+
+
+
+ 
+);

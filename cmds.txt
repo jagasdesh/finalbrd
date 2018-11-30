@@ -1,0 +1,46 @@
+create table TEMP_MAKER
+(
+CustomerID number(10),
+CustomerCode varchar(30) ,
+costumerName varchar(30),
+CustomerAddress1 varchar(100),
+CostomerAddress2 varchar(100),
+CustomerPinCode number(6),
+Emailaddress varchar(100),
+ContactNumber number(20),
+PrimaryContactPerson varchar(100),
+RecordStatus varchar(1),
+ActiveInactivFlag varchar(1),
+CreateDate date,
+CreatedBy varchar(30),
+ModifiedDate date,
+ModifiedBy varchar(30),
+AuthorizedDate date,
+AuthorizedBy varchar(30)
+
+
+
+ 
+);
+select *from costumermaster6;
+drop table costumermaster;
+commit;
+insert into costumermaster4 values('2','Nsbt01','Nsbt pvt Ltd','A-39,Noida','U.P.','201307','nsbt@nucleussoftware.com','9998065432','Chitralekha','N','A','13/Aug/2010','Nidhi','','','','');
+
+create table Verify_details
+(
+username varchar(30),
+password varchar(20),
+type varchar(1)
+);
+insert into Verify_details values('amar','reddy','m');
+insert into Verify_details values('jagadesh','ranga','m');
+
+
+drop table TEMP_MAKERST;
+commit;
+select *from TEMP_MAKER;
+
+
+
+select count(*) from TEMP_MAKERST where username='jagadesh' and password='ranga' and type='c';
